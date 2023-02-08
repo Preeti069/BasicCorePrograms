@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from below options");
-            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber");
+            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -32,7 +32,10 @@ namespace BasicCorePrograms
                     Console.WriteLine("Finding Harmonic value till Nth number :");
                     HarmonicNumber.harmonicnumber();
                     break;
-
+                case 5:
+                    Console.WriteLine("Prime Factorization Program");
+                    Factors.factors();
+                    break;
                 default:
                     Console.WriteLine("Please enter number within range");
                     break;
