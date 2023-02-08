@@ -13,7 +13,8 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Please choose any one program from below options");
             Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors " +
-                "\n6:QuotientAndReminder \n7:Swap Two Numbers \n8:EvenOrOdd \n9:VowelOrConsonant");
+                "\n6:QuotientAndReminder \n7:Swap Two Numbers \n8:EvenOrOdd \n9:VowelOrConsonant" +
+                " \n10:Largest Among Three Numbers");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -52,6 +53,10 @@ namespace BasicCorePrograms
                 case 9:
                     Console.WriteLine("Program to Check Whether an Alphabet is Vowel or Consonant :");
                     VowelOrConsonant.VowelConsonant();
+                    break;
+                case 10:
+                    Console.WriteLine("Program to Find the Largest Among Three Numbers");
+                    LargestAmongThreeNumbers.LargestNumber();
                     break;
                 default:
                     Console.WriteLine("Please enter number within range");
