@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from below options");
-            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors");
+            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors \n6:QuotientAndReminder");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -35,6 +35,10 @@ namespace BasicCorePrograms
                 case 5:
                     Console.WriteLine("Prime Factorization Program");
                     Factors.factors();
+                    break;
+                case 6:
+                    Console.WriteLine("Quotient And Reminder Program :");
+                    QuotientAndReminder.QuoientReminder();
                     break;
                 default:
                     Console.WriteLine("Please enter number within range");
