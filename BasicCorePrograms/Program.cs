@@ -13,7 +13,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Please choose any one program from below options");
             Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors " +
-                "\n6:QuotientAndReminder \n7:Swap Two Numbers");
+                "\n6:QuotientAndReminder \n7:Swap Two Numbers \n8:EvenOrOdd");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -44,6 +44,10 @@ namespace BasicCorePrograms
                 case 7:
                     Console.WriteLine("Program to Swap Two Numbers :");
                     SwapNumbers.swapNumbers();
+                    break;
+                case 8:
+                    Console.WriteLine("Program to Check Whether a Number is Even or Odd");
+                    EvenOrOdd.EvenOdd();
                     break;
                 default:
                     Console.WriteLine("Please enter number within range");
