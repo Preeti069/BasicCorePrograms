@@ -12,7 +12,8 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one program from below options");
-            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors \n6:QuotientAndReminder");
+            Console.WriteLine("1:Flipcoin \n2:Leap Year \n3:PowerOf2 \n4:HarmonicNumber \n5:Factors " +
+                "\n6:QuotientAndReminder \n7:Swap Two Numbers");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -39,6 +40,10 @@ namespace BasicCorePrograms
                 case 6:
                     Console.WriteLine("Quotient And Reminder Program :");
                     QuotientAndReminder.QuoientReminder();
+                    break;
+                case 7:
+                    Console.WriteLine("Program to Swap Two Numbers :");
+                    SwapNumbers.swapNumbers();
                     break;
                 default:
                     Console.WriteLine("Please enter number within range");
